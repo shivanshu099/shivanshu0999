@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Faster+One&family=Lovers+Quarrel&family=Orbitron&family=Poppins&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/5b1dd63968.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="code.css">
+  <title>Portfolio_Website</title>
+</head>
+<body>
+  <!-- Header -->
+  <div id="header">
+    
+      <nav>
+        <h1 class="logo"><span class="logos">S</span>hivanshu</h1>
+        <div class="nav-toggle"><i class="fa fa-bars"></i></div>
+        <ul>
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-text">
+       <h2 contenteditable="true">Aspiring data Scientist</h2>
+        <h1>Hi, I am <span>Shivanshu Prajapati</span><br>and I am passionate about </h1>
+        <h1><span id="element"></span></h1>
+      </div>
+    
+  </div>
+
+  <!-- About -->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="logo.1.jpeg" alt="Shivanshu Prajapati">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+
+          <p>Aspiring Data Scientist with experience in web development, machine learning, and data analysis. Proficient in Django, Python, SQL, and Power BI. Skilled in model building, NLP using LangChain, and visualization.</p>
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>Backend Development</span><br>Django & REST APIs</li>
+              <li><span>Machine Learning</span><br>Model building & evaluation</li>
+              <li><span>Data Science</span><br>SQL, Excel, Power BI</li>
+              <li><span>Python Development</span><br>Automation & scripting</li>
+              <li><span>LangChain & NLP</span><br>Chatbots & embeddings</li>
+              <li><span>Web Scraping</span><br>Selenium & BeautifulSoup</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li><span>Apr 2023 – May 2023</span><br>Data Analyst Intern at Bhart Intern, India. Worked on data gathering, validation, preprocessing, and analysis.</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>Sep 2022 – Present</span><br>B.Tech in CSE (Data Science) at Maharana Pratap Engineering College, Kanpur</li>
+              <li><span>HackerRank Python (Basic)</span><br>Certificate</li>
+              <li><span>HackerRank SQL (Intermediate)</span><br>Certificate</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Services -->
+  <div id="services">
+    <div class="container">
+      <h1 class="sub-title">My Services</h1>
+      <div class="services-list">
+        <div>
+          <i class="fa-solid fa-code"></i>
+          <h2>Web Development</h2>
+          <p>Building scalable web applications with Django and RESTful APIs.</p>
+        </div>
+        <div>
+          <i class="fa-solid fa-robot"></i>
+          <h2>Machine Learning</h2>
+          <p>Designing and deploying ML models, including LSTM and classification.</p>
+        </div>
+        <div>
+          <i class="fa-solid fa-chart-bar"></i>
+          <h2>Data Visualization</h2>
+          <p>Creating insights with Power BI, Matplotlib, and interactive dashboards.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Projects -->
+  <div id="projects">
+    <div class="container">
+      <h1 class="sub-title">My Projects</h1>
+      <div class="projects-list">
+        <div>
+          <i class="fa-solid fa-car"></i>
+          <h2>Car Recommendation System</h2>
+          <p>Built a recommendation engine using LLMs, Gemini API, and vector databases.</p>
+          <a href="https://github.com/shivanshu099/Car-Recommendation-System-Using-Large-Language-Models-and-Vector-Databases" target="_blank">View on GitHub</a>
+        </div>
+        <div>
+          <i class="fa-solid fa-dumbbell"></i>
+          <h2>Health Vision</h2>
+          <p>Developed a fitness goal platform with AI-based personalized planning.</p>
+          <a href="https://github.com/shivanshu099/health_vision_project" target="_blank">View on GitHub</a>
+        </div>
+        <div>
+          <i class="fa-solid fa-chart-line"></i>
+          <h2>Stock Prediction Using LSTM</h2>
+          <p>Predicted TSLA stock prices with LSTM neural networks in Python.</p>
+          <a href="https://github.com/shivanshu099/stock-prediction-using-LSTM/tree/main/stock" target="_blank">View on GitHub</a>
+        </div>
+        <div>
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <h2>Ultimate Scraper</h2>
+          <p>Web scraper using Selenium to extract data from Amazon and Flipkart.</p>
+          <a href="https://github.com/shivanshu099/ultimate_scraper" target="_blank">View on GitHub</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact -->
+  <div id="contact">
+    <div class="container">
+      <h1 class="sub-title">Contact Me</h1>
+      <div class="contact-left">
+        <p><i class="fa-solid fa-envelope"></i> kshivansh.knp+hi@gmail.com</p>
+        <p><i class="fa-solid fa-phone"></i> +91 9369079295</p>
+        <div class="social-icons">
+          <a href="https://github.com/SHIVANSHU099"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/shivanshu-p-724bab252/"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://www.hackerrank.com/certificates/bb9c79d05bb6"><i class="fa-solid fa-certificate"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 Made with <i class="fa-solid fa-heart"></i> by Shivanshu Prajapati</p>
+  </footer>
+
+  <script>
+    // Mobile nav toggle
+    document.querySelector('.nav-toggle').addEventListener('click', () => {
+      document.querySelector('nav').classList.toggle('open');
+    });
+    // Tabs
+    var tablinks = document.getElementsByClassName('tab-links');
+    var tabcontents = document.getElementsByClassName('tab-contents');
+    function opentab(tabname) {
+      Array.from(tablinks).forEach(link => link.classList.remove('active-link'));
+      Array.from(tabcontents).forEach(content => content.classList.remove('active-tab'));
+      event.currentTarget.classList.add('active-link');
+      document.getElementById(tabname).classList.add('active-tab');
+    }
+  </script>
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['Data Scientist', 'Python Developer', 'LLM Enthusiast', 'Web Developer', 'Machine Learning Engineer'],
+      typeSpeed: 50,
+      loop: true
+    });
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
