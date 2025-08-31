@@ -33,6 +33,15 @@ img {
   padding: 2rem 0;
 }
 
+hr{
+  width: 80%;
+  margin: 4rem auto;
+  border: 0;
+  border-top: 2px dashed var(--color-accent);
+  
+}
+
+
 /* ========== NAVBAR ========== */
 nav {
   position: sticky;
@@ -186,6 +195,8 @@ nav a:hover::after { width: 100%; }
 	height: 500px;
   object-fit: cover;
 }
+
+
 .tab-titles {
   display: flex;
   gap: 1.5rem;
@@ -308,38 +319,140 @@ nav a:hover::after { width: 100%; }
 }
 
 
-/* ========== CONTACT ========== */
+/* --- Base Styles for the entire contact section --- */
 #contact {
-  background: #222;
-  padding: 4rem 0;
+    padding: 50px 0;
+    color: #ababab;
+    background-color: #1a1a1a;
+    margin: 12px auto;
 }
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.sub-title {
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.col_row{
+     display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+/* --- Styles for the left side (Contact details and social icons) --- */
 .contact-left {
-  max-width: 400px;
-  margin: 0 auto;
-  text-align: center;
+    flex-basis: 40%;
 }
+
 .contact-left p {
-  margin: 1rem 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    margin-top: 30px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
 }
-.contact-left p i { margin-right: 0.75rem; font-size: 1.25rem; color: var(--color-accent); }
+
+.contact-left p i {
+    color: #ff004f;
+    margin-right: 15px;
+    font-size: 25px;
+}
+
 .social-icons {
-  display: flex;
-  justify-content: center;
-  gap: 2rem; /* increased spacing between icons */
-  margin-top: 2rem; /* added top margin */
+    margin-top: 30px;
+    display: flex;
+    gap: 15px;
 }
+
 .social-icons a {
-  font-size: 1.5rem;
-  color: #ffffff; /* set icon color to white */
-  transition: color var(--transition), transform var(--transition);
+    text-decoration: none;
+    font-size: 25px;
+    color: #ababab;
+    transition: transform 0.5s, color 0.5s;
 }
+
 .social-icons a:hover {
-  color: var(--color-accent);
-  transform: translateY(-4px);
+    color: #ff004f;
+    transform: translateY(-5px);
 }
+
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 6px;
+    background: #ff004f;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    margin-top: 20px;
+    transition: background 0.5s, transform 0.5s;
+}
+
+.btn:hover {
+    background: #d60045;
+    transform: scale(1.05);
+}
+
+/* --- Styles for the right side (Contact Form) --- */
+.contact-right {
+    flex-basis: 55%;
+}
+
+.contact-right form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-right form input,
+.contact-right form textarea {
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin-bottom: 17px;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+.contact-right form textarea {
+    resize: vertical;
+}
+
+.contact-right .btn2 {
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+/* --- Mobile Responsiveness (for screens up to 768px wide) --- */
+@media only screen and (max-width: 768px) {
+    .sub-title {
+        font-size: 40px;
+    }
+
+    .col_row {
+        flex-direction: column;
+    }
+
+    .contact-left,
+    .contact-right {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+}
+
 
 /* ========== FOOTER ========== */
 footer {
@@ -392,7 +505,7 @@ h2{
 
   /* HEADER */
   #header {
-    height: auto;
+    height: 100vh;
     padding: 6rem 1rem 4rem;
   }
   .header-text {
@@ -417,7 +530,10 @@ h2{
   .services-list div { padding: 1.5rem; }
 
   /* CONTACT */
-  #contact { padding: 2rem 1rem; }
+  #contact { 
+  padding: 2rem 1rem;
+  height: max-content;
+ }
   .contact-left { max-width: 100%; }
   .social-icons { gap: 1rem; }
 
@@ -506,5 +622,10 @@ h2{
 
 
 }
+
+
+
+
+
 
 
