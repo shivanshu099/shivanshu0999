@@ -1,36 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Faster+One&family=Lovers+Quarrel&family=Orbitron&family=Poppins&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Faster+One&family=Lovers+Quarrel&family=Orbitron&family=Poppins&display=swap"
+    rel="stylesheet">
   <script src="https://kit.fontawesome.com/5b1dd63968.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="main.css">
   <title>Portfolio_Website</title>
 </head>
+
 <body>
   <!-- Header -->
   <div id="header">
-    
-      <nav>
-        <h1 class="logo"><span class="logos">S</span>hivanshu</h1>
-        <div class="nav-toggle"><i class="fa fa-bars"></i></div>
-        <ul>
-          <li><a href="#header">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-      <div class="header-text">
-       <h2 contenteditable="true">Aspiring data Scientist</h2>
-        <h1>Hi, I am <span>Shivanshu Prajapati</span><br>and I am passionate about </h1>
-        <h1><span id="element"></span></h1>
-      </div>
-    
+
+    <nav>
+      <h1 class="logo"><span class="logos">S</span>hivanshu</h1>
+      <div class="nav-toggle"><i class="fa fa-bars"></i></div>
+      <ul>
+        <li><a href="#header">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header-text">
+      <h2 contenteditable="true">Aspiring data Scientist</h2>
+      <h1>Hi, I am <span>Shivanshu Prajapati</span><br>and I am passionate about </h1>
+      <h1><span id="element"></span></h1>
+    </div>
+
   </div>
 
   <!-- About -->
@@ -38,12 +42,13 @@
     <div class="container">
       <div class="row">
         <div class="about-col-1">
-          <img src="image_4.png" alt="Shivanshu Prajapati">
+          <img id="my_image" src="image_4.png" alt="Shivanshu Prajapati">
         </div>
         <div class="about-col-2">
           <h1 class="sub-title">About Me</h1>
 
-          <p>Aspiring Data Scientist with experience in web development, machine learning, and data analysis. Proficient in Django, Python, SQL, and Power BI. Skilled in model building, NLP using LangChain, and visualization.</p>
+          <p>Aspiring Data Scientist with experience in web development, machine learning, and data analysis. Proficient
+            in Django, Python, SQL, and Power BI. Skilled in model building, NLP using LangChain, and visualization.</p>
           <div class="tab-titles">
             <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
             <p class="tab-links" onclick="opentab('experience')">Experience</p>
@@ -61,12 +66,14 @@
           </div>
           <div class="tab-contents" id="experience">
             <ul>
-              <li><span>Apr 2023 – May 2023</span><br>Data Analyst Intern at Bhart Intern, India. Worked on data gathering, validation, preprocessing, and analysis.</li>
+              <li><span>Apr 2023 – May 2023</span><br>Data Analyst Intern at Bhart Intern, India. Worked on data
+                gathering, validation, preprocessing, and analysis.</li>
             </ul>
           </div>
           <div class="tab-contents" id="education">
             <ul>
-              <li><span>Sep 2022 – Present</span><br>B.Tech in CSE (Data Science) at Maharana Pratap Engineering College, Kanpur</li>
+              <li><span>Sep 2022 – Present</span><br>B.Tech in CSE (Data Science) at Maharana Pratap Engineering
+                College, Kanpur</li>
               <li><span>HackerRank Python (Basic)</span><br>Certificate</li>
               <li><span>HackerRank SQL (Intermediate)</span><br>Certificate</li>
             </ul>
@@ -75,90 +82,119 @@
       </div>
     </div>
   </div><!-- Services -->
-<div id="services">
-  <div class="container">
-    <h1 class="sub-title">My Services</h1>
-    <div class="services-list">
-      <div>
-        <i class="fa-solid fa-code"></i>
-        <h2>Web Development</h2>
-        <p>Building scalable web applications using Django, React, Next.js, and RESTful APIs.</p>
-      </div>
-      <div>
-        <i class="fa-solid fa-robot"></i>
-        <h2>Machine Learning & AI</h2>
-        <p>Designing, fine-tuning, and deploying ML/LLM models using TensorFlow, PyTorch, and Transformers.</p>
-      </div>
-      <div>
-        <i class="fa-solid fa-chart-bar"></i>
-        <h2>Data Visualization & BI</h2>
-        <p>Creating insights and dashboards with Power BI, Excel, and Matplotlib for data-driven decisions.</p>
-      </div>
-      <div>
-        <i class="fa-solid fa-bug"></i>
-        <h2>Automation & Web  <br><br> Scraping</h2>
-        <p>Automating workflows and extracting data efficiently using Selenium and BeautifulSoup.</p>
-      </div>
-      <div>
-        <i class="fa-solid fa-brain"></i>
-        <h2>AI & NLP Solutions</h2>
-        <p>Developing intelligent NLP solutions with LangChain, Transformers, and LLM fine-tuning.</p>
+  <div id="services">
+    <div class="container">
+      <h1 class="sub-title">My Services</h1>
+
+      <hr>
+      <div class="services-list">
+        <div>
+          <i class="fa-solid fa-code"></i>
+          <h2>Web Development</h2>
+          <p>Building scalable web applications using Django, React, Next.js, and RESTful APIs.</p>
+        </div>
+        <div>
+          <i class="fa-solid fa-robot"></i>
+          <h2>Machine Learning & AI</h2>
+          <p>Designing, fine-tuning, and deploying ML/LLM models using TensorFlow, PyTorch, and Transformers.</p>
+        </div>
+        <div>
+          <i class="fa-solid fa-chart-bar"></i>
+          <h2>Data Visualization & BI</h2>
+          <p>Creating insights and dashboards with Power BI, Excel, and Matplotlib for data-driven decisions.</p>
+        </div>
+        <div>
+          <i class="fa-solid fa-bug"></i>
+          <h2>Automation & Web <br><br> Scraping</h2>
+          <p>Automating workflows and extracting data efficiently using Selenium and BeautifulSoup.</p>
+        </div>
+        <div>
+          <i class="fa-solid fa-brain"></i>
+          <h2>AI & NLP Solutions</h2>
+          <p>Developing intelligent NLP solutions with LangChain, Transformers, and LLM fine-tuning.</p>
+        </div>
       </div>
     </div>
   </div>
-</div>
 
-<!-- Projects -->
-<div id="projects">
-  <div class="container">
-    <h1 class="sub-title">My Projects</h1>
-    <div class="projects-list">
-      <div class="project-card">
-        <i class="fa-solid fa-car"></i>
-        <h2>Car Recommendation System</h2>
-        <p>Built a recommendation engine using LLMs, Gemini API, and vector databases.</p>
-        <a href="https://github.com/shivanshu099/Car-Recommendation-System-Using-Large-Language-Models-and-Vector-Databases" target="_blank">View on GitHub</a>
-      </div>
-      <div class="project-card">
-        <i class="fa-solid fa-dumbbell"></i>
-        <h2>Health Vision</h2>
-        <p>Developed a fitness goal platform with AI-based personalized planning.</p>
-        <a href="https://github.com/shivanshu099/health_vision_project" target="_blank">View on GitHub</a>
-      </div>
-      <div class="project-card">
-        <i class="fa-solid fa-chart-line"></i>
-        <h2>Stock Prediction Using LSTM</h2>
-        <p>Predicted TSLA stock prices with LSTM neural networks in Python.</p>
-        <a href="https://github.com/shivanshu099/stock-prediction-using-LSTM/tree/main/stock" target="_blank">View on GitHub</a>
-      </div>
-      <div class="project-card">
-        <i class="fa-solid fa-magnifying-glass"></i>
-        <h2>Ultimate Scraper</h2>
-        <p>Web scraper using Selenium to extract data from Amazon and Flipkart.</p>
-        <a href="https://github.com/shivanshu099/ultimate_scraper" target="_blank">View on GitHub</a>
-      </div>
-      <div class="project-card">
-        <i class="fa-solid fa-robot"></i>
-        <h2>Yumi – Voice-enabled AI <br><br> Companion</h2>
-        <p>Engineered a voice chatbot with VOSK, pyttsx3, and a VTube avatar for real-time voice transcription and natural language response. Integrated VB-Cable for seamless communication.</p>
-        <a href="https://github.com/shivanshu099/yumi_sama_version_v.1" target="_blank">View on GitHub</a>
+  <!-- Projects -->
+
+  <div id="projects">
+    <div class="container">
+      <h1 class="sub-title">My Projects</h1>
+
+      <hr>
+      <div class="projects-list">
+        <div class="project-card">
+          <i class="fa-solid fa-car"></i>
+          <h2>Car Recommendation System</h2>
+          <p>Built a recommendation engine using LLMs, Gemini API, and vector databases.</p>
+          <a href="https://github.com/shivanshu099/Car-Recommendation-System-Using-Large-Language-Models-and-Vector-Databases"
+            target="_blank">View on GitHub</a>
+        </div>
+        <div class="project-card">
+          <i class="fa-solid fa-dumbbell"></i>
+          <h2>Health Vision</h2>
+          <p>Developed a fitness goal platform with AI-based personalized planning.</p>
+          <a href="https://github.com/shivanshu099/health_vision_project" target="_blank">View on GitHub</a>
+        </div>
+        <div class="project-card">
+          <i class="fa-solid fa-chart-line"></i>
+          <h2>Stock Prediction Using LSTM</h2>
+          <p>Predicted TSLA stock prices with LSTM neural networks in Python.</p>
+          <a href="https://github.com/shivanshu099/stock-prediction-using-LSTM/tree/main/stock" target="_blank">View on
+            GitHub</a>
+        </div>
+        <div class="project-card">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <h2>Ultimate Scraper</h2>
+          <p>Web scraper using Selenium to extract data from Amazon and Flipkart.</p>
+          <a href="https://github.com/shivanshu099/ultimate_scraper" target="_blank">View on GitHub</a>
+        </div>
+        <div class="project-card">
+          <i class="fa-solid fa-robot"></i>
+          <h2>Yumi – Voice-enabled AI <br><br> Companion</h2>
+          <p>Engineered a voice chatbot with VOSK, pyttsx3, and a VTube avatar for real-time voice transcription and
+            natural language response. Integrated VB-Cable for seamless communication.</p>
+          <a href="https://github.com/shivanshu099/yumi_sama_version_v.1" target="_blank">View on GitHub</a>
+        </div>
       </div>
     </div>
   </div>
-</div>
 
-
-  <!-- Contact -->
   <div id="contact">
     <div class="container">
-      <h1 class="sub-title">Contact Me</h1>
-      <div class="contact-left">
-        <p><i class="fa-solid fa-envelope"></i> kshivansh.knp+hi@gmail.com</p>
-        <p><i class="fa-solid fa-phone"></i> +91 9369079295</p>
-        <div class="social-icons">
-          <a href="https://github.com/SHIVANSHU099"><i class="fa-brands fa-github"></i></a>
-          <a href="https://www.linkedin.com/in/shivanshu-p-724bab252/"><i class="fa-brands fa-linkedin"></i></a>
-          <a href="https://www.hackerrank.com/certificates/bb9c79d05bb6"><i class="fa-solid fa-certificate"></i></a>
+      <div class="col_row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <p>
+            <i class="fa-solid fa-envelope"></i>
+            kshivansh.knp+hi@gmail.com
+          </p>
+          <p>
+            <i class="fa-solid fa-phone"></i>
+            +91 9369079295
+          </p>
+          <div class="social-icons">
+            <a href="https://github.com/SHIVANSHU099" target="_blank" title="GitHub">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/shivanshu-p-724bab252/" target="_blank" title="LinkedIn">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://www.hackerrank.com/certificates/bb9c79d05bb6" target="_blank" title="HackerRank">
+              <i class="fa-solid fa-certificate"></i>
+            </a>
+          </div>
+          <a href="your_resume.pdf" class="btn btn2" download>Download CV</a>
+        </div>
+        <div class="contact-right">
+          <form>
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="Email" placeholder="Your Email" required>
+            <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
         </div>
       </div>
     </div>
@@ -190,8 +226,25 @@
       typeSpeed: 50,
       loop: true
     });
+
   </script>
+  <script>
+    document.addEventListener('DOMContentLoaded',function(){
+      const myImage = document.getElementById("my_image");
+      const defaultImage="image_4.png";
+      const hoverImage="image_5.png";
+      myImage.addEventListener("mouseover",function(){
+        this.src=hoverImage;
+      });
+      myImage.addEventListener("mouseleave",function(){
+        this.src=defaultImage;
+      });
+    });
+  </script>
+  </body>
 </body>
+
 </html>
+
 
 
