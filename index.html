@@ -34,6 +34,7 @@
       <h1>Hi, I am <span>Shivanshu Prajapati</span><br>and I am passionate about </h1>
       <h1><span id="element"></span></h1>
     </div>
+    <a href="#about" id="#know_more" class="btn">Know More</a>
 
   </div>
 
@@ -116,7 +117,38 @@
       </div>
     </div>
   </div>
-
+  <!--- marque -->
+  <div class="section_2" id="s2">
+    <div id="page2">
+      <div id="move">
+        <div class="marque">
+          <h1>Embrace the challenge</h1>
+          <br>
+          <img src="arrow_bre.svg" alt="">
+        </div>
+        <div class="marque">
+          <h1>Today's pain, tomorrow's power.</h1>
+          <br>
+          <img src="arrow_bre.svg" alt="">
+        </div>
+        <div class="marque">
+          <h1>Embrace the challenge</h1>
+          <br>
+          <img src="arrow_bre.svg" alt="">
+        </div>
+        <div class="marque">
+          <h1>Today's pain, tomorrow's power.</h1>
+          <br>
+          <img src="arrow_bre.svg" alt="">
+        </div>
+        <div class="marque">
+          <h1>Embrace the challenge</h1>
+          <br>
+          <img src="arrow_bre.svg" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
   <!-- Projects -->
 
   <div id="projects">
@@ -127,7 +159,7 @@
       <div class="projects-list">
         <div class="project-card">
           <i class="fa-solid fa-car"></i>
-          <h2>Car Recommendation System</h2>
+          <h2>Car Recommendation <br><br> System</h2>
           <p>Built a recommendation engine using LLMs, Gemini API, and vector databases.</p>
           <a href="https://github.com/shivanshu099/Car-Recommendation-System-Using-Large-Language-Models-and-Vector-Databases"
             target="_blank">View on GitHub</a>
@@ -140,7 +172,7 @@
         </div>
         <div class="project-card">
           <i class="fa-solid fa-chart-line"></i>
-          <h2>Stock Prediction Using LSTM</h2>
+          <h2>Stock Prediction <br><br> Using LSTM</h2>
           <p>Predicted TSLA stock prices with LSTM neural networks in Python.</p>
           <a href="https://github.com/shivanshu099/stock-prediction-using-LSTM/tree/main/stock" target="_blank">View on
             GitHub</a>
@@ -203,48 +235,12 @@
   <footer>
     <p>© 2025 Made with <i class="fa-solid fa-heart"></i> by Shivanshu Prajapati</p>
   </footer>
-
-  <script>
-    // Mobile nav toggle
-    document.querySelector('.nav-toggle').addEventListener('click', () => {
-      document.querySelector('nav').classList.toggle('open');
-    });
-    // Tabs
-    var tablinks = document.getElementsByClassName('tab-links');
-    var tabcontents = document.getElementsByClassName('tab-contents');
-    function opentab(tabname) {
-      Array.from(tablinks).forEach(link => link.classList.remove('active-link'));
-      Array.from(tabcontents).forEach(content => content.classList.remove('active-tab'));
-      event.currentTarget.classList.add('active-link');
-      document.getElementById(tabname).classList.add('active-tab');
-    }
-  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+    integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-  <script>
-    var typed = new Typed('#element', {
-      strings: ['Data Scientist', 'Python Developer', 'LLM Enthusiast', 'Web Developer', 'Machine Learning Engineer'],
-      typeSpeed: 50,
-      loop: true
-    });
-
-  </script>
-  <script>
-    document.addEventListener('DOMContentLoaded',function(){
-      const myImage = document.getElementById("my_image");
-      const defaultImage="image_4.png";
-      const hoverImage="image_5.png";
-      myImage.addEventListener("mouseover",function(){
-        this.src=hoverImage;
-      });
-      myImage.addEventListener("mouseleave",function(){
-        this.src=defaultImage;
-      });
-    });
-  </script>
-  </body>
+  <script src="script.js"></script>
+</body>
 </body>
 
 </html>
-
-
-
