@@ -891,3 +891,35 @@ footer i {
 ::-webkit-scrollbar-thumb {
   background: var(--primary-color);
 }
+
+
+.mouse-follower{
+      position:fixed;
+      top:0;left:0;
+      width:80px;height:100px;
+      pointer-events:none;
+      transform:translate(-50%,-50%);
+      z-index:9999;
+      opacity:0;transition:opacity 0.3s ease;
+      filter:drop-shadow(0 0 6px #ff66aa) drop-shadow(0 0 15px #ff004f);
+    }
+
+    .mouse-follower.visible{opacity:1;}
+
+    svg{
+      width:100%;height:100%;
+    }
+
+    .mouse-follower.clicking svg polygon{
+      fill:#ffffff;
+    }
+
+
+
+
+
+
+
+
+
+
