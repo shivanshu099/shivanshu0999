@@ -261,7 +261,31 @@ I’m curious by nature, always learning new technologies, and passionate about 
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
   <script src="script.js"></script>
-</body>
+  <script>
+    (function(){
+      const el=document.getElementById('mouseFollower');
+      let mx=window.innerWidth/2,my=window.innerHeight/2;
+      let px=mx,py=my;
+      const ease=0.25;
+      let vis=false;
+
+      window.addEventListener('mousemove',e=>{
+        mx=e.clientX;my=e.clientY;
+        if(!vis){el.classList.add('visible');vis=true;}
+      });
+
+      window.addEventListener('mouseleave',()=>{el.classList.remove('visible');vis=false;});
+      window.addEventListener('mousedown',()=>el.classList.add('clicking'));
+      window.addEventListener('mouseup',()=>el.classList.remove('clicking'));
+
+      function animate(){
+        px+=(mx-px)*ease;py+=(my-py)*ease;
+        el.style.left=px+'px';el.style.top=py+'px';
+        requestAnimationFrame(animate);
+      }
+      animate();
+    })();
+  </script>
 </body>
 
 </html>
