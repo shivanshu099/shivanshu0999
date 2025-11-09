@@ -21,7 +21,8 @@
   <!-- Header -->
   <div class="mouse-follower" id="mouseFollower">
     <svg viewBox="0 0 100 150" xmlns="http://www.w3.org/2000/svg">
-      <polygon points="27,20 79,73 48,79 62,123 51,127 39,82 12,88" fill="#ff004f" stroke="#000" stroke-width="6" stroke-linejoin="round" />
+      <polygon points="27,20 79,73 48,79 62,123 51,127 39,82 12,88" fill="#ff004f" stroke="#000" stroke-width="6"
+        stroke-linejoin="round" />
     </svg>
   </div>
 
@@ -57,25 +58,66 @@
         <div class="about-col-2">
           <h1 class="sub-title">About Me</h1>
 
-          <p>I’m an aspiring Data Scientist and AI Developer who enjoys combining creativity with technology to solve real-world problems. I have experience in machine learning, data analysis, and web development using tools like Python, Django, SQL, and Power BI.
-<br>
-I love exploring data, building intelligent models, and creating interactive web apps that turn ideas into reality. My work often involves NLP projects with LangChain, data visualization, and automation.
-<br>
-I’m curious by nature, always learning new technologies, and passionate about developing smart systems that make life easier and more efficient.</p>
+          <p>I’m an aspiring Data Scientist and AI Developer who enjoys combining creativity with technology to solve
+            real-world problems. I have experience in machine learning, data analysis, and web development using tools
+            like Python, Django, SQL, and Power BI.
+            <br>
+            I love exploring data, building intelligent models, and creating interactive web apps that turn ideas into
+            reality. My work often involves NLP projects with LangChain, data visualization, and automation.
+            <br>
+            I’m curious by nature, always learning new technologies, and passionate about developing smart systems that
+            make life easier and more efficient.
+          </p>
           <div class="tab-titles">
             <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
             <p class="tab-links" onclick="opentab('experience')">Experience</p>
             <p class="tab-links" onclick="opentab('education')">Education</p>
           </div>
           <div class="tab-contents active-tab" id="skills">
-            <ul>
-              <li><span>Backend Development</span><br>Django & REST APIs</li>
-              <li><span>Machine Learning</span><br>Model building & evaluation</li>
-              <li><span>Data Science</span><br>SQL, Excel, Power BI</li>
-              <li><span>Python Development</span><br>Automation & scripting</li>
-              <li><span>LangChain & NLP</span><br>Chatbots & embeddings</li>
-              <li><span>Web Scraping</span><br>Selenium & BeautifulSoup</li>
-            </ul>
+
+<div class="skills-section">
+  <div class="tab-links-skills">
+    <button class="tablink-skills active" onclick="openTab(event, 'languages')">Languages</button>
+    <button class="tablink-skills" onclick="openTab(event, 'framework')">Framework</button>
+    <button class="tablink-skills" onclick="openTab(event, 'tools')">Tools</button>
+  </div>
+
+  <div id="languages" class="tab-content-skills active">
+    <ul>
+      <li>Python</li>
+      <li>Java</li>
+      <li>C++</li>
+      <li>SQL</li>
+      <li>HTML/CSS</li>
+      <li>JavaScript</li>
+    </ul>
+  </div>
+
+  <div id="framework" class="tab-content-skills">
+    <ul>
+      <li>Django</li>
+      <li>React</li>
+      <li>Pytorch</li>
+      <li>TensorFlow</li>
+      <li>LangChain</li>
+
+    </ul>
+  </div>
+
+  <div id="tools" class="tab-content-skills">
+    <ul>
+      <li>Git</li>
+      <li>VS Code</li>
+      <li>Postman</li>
+      <li>DOcker</li>
+      <li>Power BI</li>
+      <li>AWS</li>
+      
+      
+    </ul>
+  </div>
+</div>
+
           </div>
           <div class="tab-contents" id="experience">
             <ul>
@@ -169,21 +211,23 @@ I’m curious by nature, always learning new technologies, and passionate about 
 
       <hr>
       <div class="projects-list">
-         <div class="project-card">
-        <i class="fa-solid fa-robot"></i>
-        <h2>Yumi – Voice-enabled AI <br><br> Companion</h2>
-        <p>Engineered a voice chatbot with VOSK, pyttsx3, and a VTube avatar for real-time voice transcription and
-          natural language response. Integrated VB-Cable for seamless communication.</p>
-        <a href="https://github.com/shivanshu099/yumi_sama_version_v.1" target="_blank" class="btn">View on GitHub</a>
-      </div>
+        <div class="project-card">
+          <i class="fa-solid fa-robot"></i>
+          <h2>Yumi – Voice-enabled AI <br><br> Companion</h2>
+          <p>Engineered a voice chatbot with VOSK, pyttsx3, and a VTube avatar for real-time voice transcription and
+            natural language response. Integrated VB-Cable for seamless communication.</p>
+          <a href="https://github.com/shivanshu099/yumi_sama_version_v.1" target="_blank" class="btn">View on GitHub</a>
+        </div>
 
-      <!-- Added Luna Agent Project -->
-      <div class="project-card">
-        <i class="fa-solid fa-brain"></i>
-        <h2>Luna AI Agent</h2>
-        <p>Created an advanced AI agent using Gemini API and LangChain for intelligent automation, media control, and task management with real-time natural language interaction.</p>
-        <a href="https://github.com/shivanshu099/luna_agent_chatbot_version_1" target="_blank" class="btn">View on GitHub</a>
-      </div>
+        <!-- Added Luna Agent Project -->
+        <div class="project-card">
+          <i class="fa-solid fa-brain"></i>
+          <h2>Luna AI Agent</h2>
+          <p>Created an advanced AI agent using Gemini API and LangChain for intelligent automation, media control, and
+            task management with real-time natural language interaction.</p>
+          <a href="https://github.com/shivanshu099/luna_agent_chatbot_version_1" target="_blank" class="btn">View on
+            GitHub</a>
+        </div>
         <div class="project-card">
           <i class="fa-solid fa-car"></i>
           <h2>Car Recommendation <br><br> System</h2>
@@ -262,25 +306,25 @@ I’m curious by nature, always learning new technologies, and passionate about 
   <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
   <script src="script.js"></script>
   <script>
-    (function(){
-      const el=document.getElementById('mouseFollower');
-      let mx=window.innerWidth/2,my=window.innerHeight/2;
-      let px=mx,py=my;
-      const ease=0.25;
-      let vis=false;
+    (function () {
+      const el = document.getElementById('mouseFollower');
+      let mx = window.innerWidth / 2, my = window.innerHeight / 2;
+      let px = mx, py = my;
+      const ease = 0.25;
+      let vis = false;
 
-      window.addEventListener('mousemove',e=>{
-        mx=e.clientX;my=e.clientY;
-        if(!vis){el.classList.add('visible');vis=true;}
+      window.addEventListener('mousemove', e => {
+        mx = e.clientX; my = e.clientY;
+        if (!vis) { el.classList.add('visible'); vis = true; }
       });
 
-      window.addEventListener('mouseleave',()=>{el.classList.remove('visible');vis=false;});
-      window.addEventListener('mousedown',()=>el.classList.add('clicking'));
-      window.addEventListener('mouseup',()=>el.classList.remove('clicking'));
+      window.addEventListener('mouseleave', () => { el.classList.remove('visible'); vis = false; });
+      window.addEventListener('mousedown', () => el.classList.add('clicking'));
+      window.addEventListener('mouseup', () => el.classList.remove('clicking'));
 
-      function animate(){
-        px+=(mx-px)*ease;py+=(my-py)*ease;
-        el.style.left=px+'px';el.style.top=py+'px';
+      function animate() {
+        px += (mx - px) * ease; py += (my - py) * ease;
+        el.style.left = px + 'px'; el.style.top = py + 'px';
         requestAnimationFrame(animate);
       }
       animate();
