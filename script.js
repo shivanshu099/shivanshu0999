@@ -63,3 +63,22 @@ function marqueanimation() {
 }
 
 marqueanimation()
+
+
+
+function openTab(evt, tabName) {
+  const tabcontent = document.querySelectorAll(".tab-content-skills");
+  const tablinks = document.querySelectorAll(".tablink-skills");
+
+  tabcontent.forEach(tc => tc.classList.remove("active"));
+  tablinks.forEach(tl => tl.classList.remove("active"));
+
+  document.getElementById(tabName).classList.add("active");
+  evt.currentTarget.classList.add("active");
+}
+
+
+
+
+
+
