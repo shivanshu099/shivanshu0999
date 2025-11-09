@@ -389,7 +389,7 @@ nav a:hover::after {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 13vw;
+  gap: 22vw;
   padding: 0 1.3vw;
   transform: translateX(-100%);
 
